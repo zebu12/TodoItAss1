@@ -1,5 +1,6 @@
 package se.lexicon;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -9,12 +10,12 @@ public class TodoItem {
     private int id;
     private String title;
     private String taskDescription;
-    private LocalDateTime deadline;
+    private LocalDate deadline;
     private boolean completed;
     private Person creator;
 
 
-    public TodoItem(String title, String taskDescription, LocalDateTime deadline, Boolean completed, Person creator) {
+    public TodoItem(String title, String taskDescription, LocalDate deadline, Boolean completed, Person creator) {
 
         this.id = itemCount++;
         this.title = Objects.requireNonNull(title, "Not allowed to be null or empty");
@@ -38,7 +39,7 @@ public class TodoItem {
         return taskDescription;
     }
 
-    public LocalDateTime getDeadline() {
+    public LocalDate getDeadline() {
         return deadline;
     }
 
@@ -66,7 +67,7 @@ public class TodoItem {
         this.taskDescription = taskDescription;
     }
 
-    public void setDeadline(LocalDateTime deadline) {
+    public void setDeadline(LocalDate deadline) {
         this.deadline = Objects.requireNonNull(deadline, "Not allowed to be null");
     }
 
