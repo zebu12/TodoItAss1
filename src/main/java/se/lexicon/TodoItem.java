@@ -90,17 +90,12 @@ public class TodoItem {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-        TodoItem todoItem = (TodoItem) obj;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TodoItem todoItem = (TodoItem) o;
         return id == todoItem.id && completed == todoItem.completed && Objects.equals(title, todoItem.title) && Objects.equals(taskDescription, todoItem.taskDescription) && Objects.equals(deadline, todoItem.deadline);
     }
-
 
     @Override
     public int hashCode() {

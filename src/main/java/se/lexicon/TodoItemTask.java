@@ -57,14 +57,10 @@ public class TodoItemTask {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if(obj == this){
-            return true;
-        }
-        if(obj == null || obj.getClass() != this.getClass()){
-            return false;
-        }
-        TodoItemTask that = (TodoItemTask) obj;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TodoItemTask that = (TodoItemTask) o;
         return id == that.id && assigned == that.assigned && Objects.equals(todoItem, that.todoItem);
     }
 

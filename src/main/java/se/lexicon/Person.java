@@ -9,6 +9,8 @@ public class Person {
     private String firstName;
     private String lastName;
     private String email;
+    private AppUser credentials;
+
 
     public Person(String firstName, String lastName, String email) {
 
@@ -60,6 +62,8 @@ public class Person {
         return builder.toString();
     }
 
+
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -76,5 +80,13 @@ public class Person {
     @Override
     public int hashCode() {
         return Objects.hash(id, firstName, lastName, email);
+    }
+
+    public AppUser getCredentials() {
+        return credentials;
+    }
+
+    public void setCredentials(AppUser credentials) {
+        this.credentials = credentials;
     }
 }
