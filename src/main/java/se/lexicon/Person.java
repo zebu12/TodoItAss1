@@ -12,9 +12,9 @@ public class Person {
     private AppUser credentials;
 
 
-    public Person(String firstName, String lastName, String email) {
+    public Person(int id, String firstName, String lastName, String email) {
 
-        this.id = personCounter++;
+        this.id = id;
         this.firstName = Objects.requireNonNull(firstName, "firstName must not be null");
         this.lastName = Objects.requireNonNull(lastName, "lastName must not be null");
         this.email = Objects.requireNonNull(email, "email must not be null");

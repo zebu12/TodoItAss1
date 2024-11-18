@@ -15,9 +15,10 @@ public class TodoItem {
     private Person creator;
 
 
-    public TodoItem(String title, String taskDescription, LocalDate deadline, Boolean completed, Person creator) {
+    public TodoItem(int id, String title, String taskDescription, LocalDate deadline, Boolean completed, Person creator) {
 
-        this.id = itemCount++;
+        this.id = id;
+
         this.title = Objects.requireNonNull(title, "Not allowed to be null or empty");
         this.taskDescription = taskDescription;
         this.deadline = Objects.requireNonNull(deadline, "Not allowed to be null");

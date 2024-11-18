@@ -1,5 +1,6 @@
 package se.lexicon.Dao;
 
+import se.lexicon.Sequencers.TodoItemIdSequencer;
 import se.lexicon.TodoItem;
 
 import java.time.LocalDate;
@@ -18,6 +19,9 @@ public class TodoItemDaoCollection implements TodoItemDao{
 
     @Override
     public TodoItem persist(TodoItem todoItem) {
+
+        int id = TodoItemIdSequencer.nextId();
+        todoItem = new TodoItem(id,todoItem.getTitle(), todoItem.getTaskDescription(), todoItem.getDeadline(), todoItem.isCompleted(),todoItem.getCreator());
         todoItems.add(todoItem);
 
         return todoItem;
@@ -64,7 +68,7 @@ public class TodoItemDaoCollection implements TodoItemDao{
     public Collection<TodoItem> findByPersonId(int personId) {
         ArrayList<TodoItem> result = new ArrayList<>();
         for (TodoItem element : todoItems){
-            if(element.getId() == personId){
+            if(element.getCreator().getId() == personId){
                 result.add(element);
             }
         }

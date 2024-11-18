@@ -1,6 +1,7 @@
 package se.lexicon.Dao;
 
 import se.lexicon.Person;
+import se.lexicon.Sequencers.PersonIdSequencer;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -15,6 +16,9 @@ public class PersonDaoCollection implements PersonDao {
 
     @Override
     public Person persist(Person person) {
+
+        int id = PersonIdSequencer.nextId();
+        person = new Person(id, person.getFirstName(), person.getLastName(), person.getEmail());
         persons.add(person);
 
 

@@ -4,25 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="248483c1-a5d7-4687-afe4-cd0f8c50ac93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/AppUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/AppUserDaoCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/PersonDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/PersonDaoCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemDaoCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemTaskAdo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemTaskDaoCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Sequencers/PersonIdSequencer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Sequencers/TodoItemIdSequencer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Sequencers/TodoItemTaskSequencer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/se/lexicon/AppUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/se/lexicon/PesrsonTest.java" afterDir="false" />
+    <list default="true" id="248483c1-a5d7-4687-afe4-cd0f8c50ac93" name="Changes" comment="creation of some files and update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/AppRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/AppRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/PersonDaoCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/PersonDaoCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemDaoCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemDaoCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemTaskDaoCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemTaskDaoCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/TodoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/TodoItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/TodoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/TodoItemTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +42,9 @@
     &quot;accountId&quot;: &quot;6f0c1c01-571a-49fb-845e-3cb613b0ab81&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -188,11 +180,24 @@
       <updated>1730659675981</updated>
       <workItem from="1730659676872" duration="19033000" />
       <workItem from="1730967168902" duration="854000" />
-      <workItem from="1731627469911" duration="13891000" />
+      <workItem from="1731627469911" duration="18928000" />
     </task>
+    <task id="LOCAL-00001" summary="creation of some files and update">
+      <option name="closed" value="true" />
+      <created>1731672447248</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731672447249</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="creation of some files and update" />
+    <option name="LAST_COMMIT_MESSAGE" value="creation of some files and update" />
   </component>
 </project>

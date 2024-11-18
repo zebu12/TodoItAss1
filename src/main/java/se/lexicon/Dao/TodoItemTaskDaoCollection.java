@@ -1,5 +1,6 @@
 package se.lexicon.Dao;
 
+import se.lexicon.Sequencers.TodoItemTaskSequencer;
 import se.lexicon.TodoItemTask;
 
 import java.util.ArrayList;
@@ -17,7 +18,11 @@ public class TodoItemTaskDaoCollection implements TodoItemTaskAdo {
 
     @Override
     public TodoItemTask persist(TodoItemTask todoItemTask) {
+
+        int id = TodoItemTaskSequencer.nextId();
+        todoItemTask = new TodoItemTask(id,todoItemTask.getTodoItem(),todoItemTask.getAssignee());
         list.add(todoItemTask);
+
 
 
         return todoItemTask;
@@ -55,7 +60,7 @@ public class TodoItemTaskDaoCollection implements TodoItemTaskAdo {
     public Collection<TodoItemTask> findByPersonId(int id) {
         Collection<TodoItemTask> result = new ArrayList<>();
         for (TodoItemTask element : list){
-            if(element.getId() == id){
+            if(element.getAssignee().getId() == id){
                 result.add(element);
 
             }

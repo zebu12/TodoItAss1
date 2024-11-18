@@ -11,13 +11,14 @@ public class TodoItemTask {
     private Person assignee;
 
 
-    public TodoItemTask(TodoItem todoItem, Person assignee){
+    public TodoItemTask(int id,TodoItem todoItem, Person assignee){
+        this.id = id;
+
         if(assignee != null){
             this.assignee = assignee;
         }
         this.todoItem = Objects.requireNonNull(todoItem, "TotoItem can not be null");
         this.assignee = assignee;
-        this.id = taskCount++;
     }
 
     public int getId() {
