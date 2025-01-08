@@ -1,43 +1,61 @@
 package se.lexicon;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class TodoItem {
 
     private static int itemCount = 1;
-    private int id;
+    private int todo_id;
     private String title;
-    private String taskDescription;
+    private String description;
     private LocalDate deadline;
-    private boolean completed;
+    private boolean done;
     private Person creator;
 
 
-    public TodoItem(int id, String title, String taskDescription, LocalDate deadline, Boolean completed, Person creator) {
+    public TodoItem(int todo_id, String title, String description, LocalDate deadline, Boolean done, Person creator) {
 
-        this.id = id;
+        this.todo_id = todo_id;
 
         this.title = Objects.requireNonNull(title, "Not allowed to be null or empty");
-        this.taskDescription = taskDescription;
+        this.description = description;
         this.deadline = Objects.requireNonNull(deadline, "Not allowed to be null");
-        this.completed = completed;
+        this.done = done;
         this.creator = Objects.requireNonNull(creator, "Not allowed to be null");
 
 
     }
 
-    public int getId() {
-        return id;
+    public TodoItem() {
+    }
+
+    public TodoItem(String title, String description, LocalDate deadline, boolean done, Person creator) {
+        this.title = title;
+        this.description = description;
+        this.deadline = deadline;
+        this.done = done;
+        this.creator = creator;
+    }
+
+    public TodoItem(int todo_id, String title, String description, LocalDate deadline, boolean done) {
+        this.todo_id = todo_id;
+        this.title = title;
+        this.description = description;
+        this.deadline = deadline;
+        this.done = done;
+    }
+
+    public int getTodo_id() {
+        return todo_id;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public String getTaskDescription() {
-        return taskDescription;
+    public String getDescription() {
+        return description;
     }
 
     public LocalDate getDeadline() {
@@ -48,13 +66,13 @@ public class TodoItem {
         return creator;
     }
 
-    public boolean isCompleted() {
-        return completed;
+    public boolean isDone() {
+        return done;
     }
 
 
-    public void setId(int id) {
-        this.id = id;
+    public void setTodo_id(int todo_id) {
+        this.todo_id = todo_id;
     }
 
     public void setTitle(String title) {
@@ -64,16 +82,16 @@ public class TodoItem {
         this.title = Objects.requireNonNull(title, "Not allowed to be null or empty");
     }
 
-    public void setTaskDescription(String taskDescription) {
-        this.taskDescription = taskDescription;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public void setDeadline(LocalDate deadline) {
         this.deadline = Objects.requireNonNull(deadline, "Not allowed to be null");
     }
 
-    public void setCompleted(boolean completed) {
-        this.completed = completed;
+    public void setDone(boolean done) {
+        this.done = done;
     }
 
     public void setCreator(Person creator) {
@@ -83,11 +101,11 @@ public class TodoItem {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("Id: ").append(id).append("\n");
+        builder.append("Id: ").append(todo_id).append("\n");
         builder.append("Title: ").append(title).append("\n");
-        builder.append("Task Description: ").append(taskDescription).append("\n");
+        builder.append("Task Description: ").append(description).append("\n");
         builder.append("Deadline: ").append(deadline).append("\n");
-        builder.append("Completed Status: ").append(completed).append("\n");
+        builder.append("Completed Status: ").append(done).append("\n");
         return builder.toString();
     }
 
@@ -96,11 +114,11 @@ public class TodoItem {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         TodoItem todoItem = (TodoItem) o;
-        return id == todoItem.id && completed == todoItem.completed && Objects.equals(title, todoItem.title) && Objects.equals(taskDescription, todoItem.taskDescription) && Objects.equals(deadline, todoItem.deadline);
+        return todo_id == todoItem.todo_id && done == todoItem.done && Objects.equals(title, todoItem.title) && Objects.equals(description, todoItem.description) && Objects.equals(deadline, todoItem.deadline);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, title, taskDescription, deadline, completed);
+        return Objects.hash(todo_id, title, description, deadline, done);
     }
 }

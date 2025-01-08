@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="248483c1-a5d7-4687-afe4-cd0f8c50ac93" name="Changes" comment="creation of some files and update">
+    <list default="true" id="248483c1-a5d7-4687-afe4-cd0f8c50ac93" name="Changes" comment="some update on the files">
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/db/MySQLConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/PersonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/PersonDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/PersonDaoCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/PersonDaoCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemDaoCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemDaoCollection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemTaskDaoCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemTaskDaoCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/TodoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/TodoItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/TodoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/TodoItemTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/se/lexicon/PesrsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/lexicon/PesrsonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +76,16 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Application.Main">
@@ -180,7 +194,8 @@
       <updated>1730659675981</updated>
       <workItem from="1730659676872" duration="19033000" />
       <workItem from="1730967168902" duration="854000" />
-      <workItem from="1731627469911" duration="18928000" />
+      <workItem from="1731627469911" duration="21481000" />
+      <workItem from="1736327656142" duration="19173000" />
     </task>
     <task id="LOCAL-00001" summary="creation of some files and update">
       <option name="closed" value="true" />
@@ -190,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731672447249</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="some update on the files">
+      <option name="closed" value="true" />
+      <created>1731921621176</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731921621177</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +221,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creation of some files and update" />
-    <option name="LAST_COMMIT_MESSAGE" value="creation of some files and update" />
+    <MESSAGE value="some update on the files" />
+    <option name="LAST_COMMIT_MESSAGE" value="some update on the files" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/se/lexicon/Dao/TodoItemTaskDaoCollection.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

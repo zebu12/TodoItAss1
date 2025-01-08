@@ -5,7 +5,6 @@ import se.lexicon.TodoItemTask;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 public class TodoItemTaskDaoCollection implements TodoItemTaskAdo {
 
@@ -60,7 +59,7 @@ public class TodoItemTaskDaoCollection implements TodoItemTaskAdo {
     public Collection<TodoItemTask> findByPersonId(int id) {
         Collection<TodoItemTask> result = new ArrayList<>();
         for (TodoItemTask element : list){
-            if(element.getAssignee().getId() == id){
+            if(element.getAssignee().getPerson_id() == id){
                 result.add(element);
 
             }
